@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			@import "css/style.css";
+		</style>
+		<title>Website Kalkulator Matematik Segitiga</title>
+	</head>
+	<body>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h1>Kalkulator Matematik Segitiga</h1>
+		<br>
+		<br>
+		<form method="post" class="formLuas">
+			<table class="tableLuas">
+				<thead class="thead">
+					<td colspan="4">Hitung Luas Segitiga</td>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Alas</td>
+						<td>:</td>
+						<td colspan="2"><input id="alas" type="number"></td>
+					</tr>
+					<tr>
+						<td>Tinggi</td>
+						<td>:</td>
+						<td colspan="2"><input id="tinggi" type="number"></td>
+					</tr>
+					<tr>
+						<td colspan="2"></td>
+						<td><button class="submitLuas" type="submit" onclick="hitungLuas();">Hitung</button></td>
+						<td><button class="resetLuas" type="reset" onclick="resetFormluas();">Reset</button></td>
+					</tr>
+		</form>
+					<tr>
+						<td>Hasil</td>
+						<td>:</td>
+						<td colspan="2"><input id="hasilLuas" type="number" readonly></td>
+					</tr>
+					<tr>
+						<td class="kalmat" colspan="4" id="kalmatLuas"></td>
+					</tr>
+					<tr>
+						<td class="kalmat" colspan="4" id="penjabaranLuas"></td>
+					</tr>
+					<tr>
+						<td class="kalmat" colspan="4" id="kalLuas"></td>
+					</tr>
+				</tbody>
+			</table>
+
+		<form method="post" class="formKeliling">
+			<table class="tableKeliling">
+				<thead class="thead">
+					<td colspan="4">Hitung Keliling Segitiga</td>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Sisi alas</td>
+						<td>:</td>
+						<td colspan="2"><input id="sisi_alas" type="number"></td>
+					</tr>
+					<tr>
+						<td>Sisi miring 1</td>
+						<td>:</td>
+						<td colspan="2"><input id="miring1" type="number"></td>
+					</tr>
+					<tr>
+						<td>Sisi miring 2</td>
+						<td>:</td>
+						<td colspan="2"><input id="miring2" type="number"></td>
+					</tr>
+					<tr>
+						<td colspan="2"></td>
+						<td><button class="submitKeliling" type="submit" onclick="hitungKeliling();">Hitung</button></td>
+						<td><button class="resetKeliling" type="reset" onclick="resetFormkeliling();">Reset</button></td>
+					</tr>
+		</form>
+					<tr>
+						<td>Hasil</td>
+						<td>:</td>
+						<td colspan="2"><input id="hasilKeliling" type="number" readonly></td>
+					</tr>
+					<tr>
+						<td class="kalmat" colspan="4" id="kalmatKeliling"></td>
+					</tr>
+					<tr>
+						<td class="kalmat" colspan="4" id="penjabaranKeliling"></td>
+					</tr>
+					<tr>
+						<td class="kalmat" colspan="4" id="kalKeliling"></td>
+					</tr>
+				</tbody>
+			</table>
+		<script src="js/script.js"></script>
+	</body>
+</html>
